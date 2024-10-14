@@ -3,6 +3,8 @@ import './Projects.css'; // Ensure you style your component
 //import ProjectImage1 from '../assets/images/project1.png'; // Your project images
 import MyProject from '../assets/images/MyProject.png';
 import CybersecurityCertif from '../assets/images/CybersecurityCertif.png';
+import MITCertif from '../assets/images/MITCertif.png'; // Adjust the path if necessary
+
 
 const Projects = () => {
   return (
@@ -15,7 +17,7 @@ const Projects = () => {
           <div className="project-image-container">
             <img src={MyProject} alt="Project 1" className="project-image" />
           </div>
-          <h3 className="project-title">M.I.T Full Stack Development Capstone Project</h3>
+          <h3 className="project-title">Finanical Dashboard Application</h3>
           <p className="project-description">
             I completed a 32-week MIT Full Stack Web Development Bootcamp with a score of 98 out of 100.
             I developed a full-stack finance dashboard using Next.js. Users can log in, log out, and perform CRUD operations.
@@ -23,9 +25,9 @@ const Projects = () => {
           <div className="project-tags">
             <span>#Next.js</span><span>#Node.js</span><span>#RESTAPI</span>
           </div>
-          <button className="github-btn" onClick={() => window.open('https://github.com/sarahhamdan23', '_blank')}>
-   GitHub
-</button>
+          <button className="github-btn" onClick={() => window.open('https:/github.com/Sarahhamdan23/nextjs-dashboard.', '_blank')}>
+            GitHub
+            </button>
 
         </div>
 
@@ -117,6 +119,25 @@ const Projects = () => {
 
   <button className="certificate-btn" onClick={() => window.open('https://coursera.org/share/d4414c9b35a4e0c6d3f8c76aff69af56', '_blank')}>
    Certificate
+  </button>
+</div>
+
+<div className="project-card">
+  <div className="project-image-container">
+    <img src={MITCertif} alt="MIT Full Stack Development Certificate" className="CybersecurityCertif" />
+  </div>
+  <h3 className="project-title">MIT Full Stack Development Certification</h3>
+  <p className="project-description">
+    This certificate represents my completion of MIT's Full Stack Development course. I gained expertise in the MERN stack, including React, Node.js, MongoDB, and Express. The capstone project focused on building a full-stack finance dashboard.
+    Check out the certificate for more details.
+  </p>
+
+  <div className="project-tags">
+    <span>#FullStack</span><span>#MERN</span><span>#MIT</span><span>#WebDevelopment</span>
+  </div>
+
+  <button className="certificate-btn" onClick={() => window.open('https://certificates.emeritus.org/0ccc9bd0-8893-4215-9d65-c9a1092b992a#gs.gn63ns', '_blank')}>
+    Certificate
   </button>
 </div>
 
