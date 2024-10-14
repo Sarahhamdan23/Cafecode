@@ -2,6 +2,16 @@
 import React, { useState } from 'react';
 import './HomePage.css';
 
+
+import Header from './Header.js';
+import Skills from './Skills.js';
+import Projects from './Projects.js';
+
+
+
+
+
+
 const HomePage = () => {
     const [isBlue, setIsBlue] = useState(false);
 
@@ -11,10 +21,11 @@ const HomePage = () => {
 
     return (
         <div className="cafe-homepage">
-            <h1>Welcome to Codé Café</h1>
-            <p>Your go-to solution for AI-driven web applications.</p>
-            <div className={`cafe-color-box ${isBlue ? 'cafe-blue' : 'cafe-red'}`}></div>
-            <button className="cafe-button" onClick={toggleColor}>Change Color</button>
+            <Header />
+            <Skills />
+            <Projects />
+
+
         </div>
     );
 };

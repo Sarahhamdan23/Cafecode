@@ -1,0 +1,205 @@
+/* Overall layout for the header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D0D0D; /* Black background */
+    padding: 20px;
+    height: 100vh;
+    color: #fff;
+    margin: 0; /* Remove any default margin */
+
+}
+
+/* Ensure that both header and overview use the same background color */
+body {
+    background-color: #0D0D0D; /* Black background for the entire page */
+    margin: 0; /* Remove body margin */
+    padding: 0; /* Remove body padding */
+}
+
+/* Ensure no margin between sections */
+header, .overview-section {
+    margin: 0;
+    padding: 0;
+}
+
+/* Overview Section */
+.overview-section {
+    padding: 50px 20px;
+    background-color: #0D0D0D; /* Same black background */
+    color: #fff;
+    text-align: center;
+    margin-top: 0; /* Remove margin between header and overview */
+}
+
+
+.overview-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFD700; /* Golden color */
+    margin-bottom: 20px;
+}
+
+.overview-text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #bdbdbd; /* Light grey for text */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    text-align: center; /* Center text */
+    margin-bottom: 30px; /* Add space between content and image */
+}
+
+
+.greeting-text {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 300px;
+}
+
+.name-highlight {
+    color: #D32F2F; /* Highlight color in red */
+    transition: all 0.4s ease; /* Smooth transition for hover effect */
+
+}
+
+.name-highlight:hover {
+    color: #e65212; /* New color when hovering (gold) */
+    font-size: 6.5rem; /* Slight increase in font size */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds shadow to make it pop */
+}
+
+.contact-btn {
+    background-color: #D32F2F;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-left: 300px;
+}
+
+.contact-btn:hover {
+    background-color: #B71C1C; /* Darker red for hover effect */
+}
+
+/* Adjust container to center the image */
+.image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width */
+}
+
+/* Adjust the profile photo styling */
+.profile-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 400px;
+    object-fit: cover;
+    max-width: 700px; /* Ensure the image scales well */
+}
+
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .header-container {
+        text-align: center;
+    }
+
+    .greeting-text {
+        font-size: 2.5rem;
+    }
+
+    .image-container {
+        margin-top: 20px;
+        max-width: 80%;
+    }
+
+    .profile-photo {
+        width: 100%;
+    }
+}
+
+/* Overview Section */
+.overview-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #0D0D0D 30%, #0D0D0D 100%); /* Add gradient effect */
+    color: #fff; /* White text */
+    text-align: center;
+    margin-top: 0;
+    box-shadow: 0px 4px 15px #0D0D0D; /* Add a subtle shadow around the section */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 200px;
+}
+
+/* Updated title styling */
+.overview-title {
+    font-size: 4.5rem; /* Slightly larger font size */
+    font-weight: bold; /* Maintain strong emphasis */
+    color: #E0E0E0; /* Soft white-grey color */
+    margin-bottom: 30px;
+    text-transform: capitalize; /* Use capital letters for each word */
+    letter-spacing: 1px; /* Moderate letter spacing */
+    text-shadow: 1px 1px 3px #0D0D0D; /* Soft shadow for subtle depth */
+    background: none; /* Remove gradient for a cleaner look */
+    color: #E0E0E0; /* Use a golden color for elegance */
+}
+
+
+/* Stylized text for a cooler effect */
+.overview-text {
+    font-size: 1.8rem; /* Slightly increase font size */
+    font-family: 'Georgia', serif; /* Change font to a more elegant style */
+    line-height: 1.8; /* Increase line height for better readability */
+    max-width: 900px;
+    margin: 0 auto;
+    color: #E0E0E0; /* Softer light grey */
+    padding: 20px; /* Padding around the text block */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0px 4px 10px #0D0D0D; /* Add a slight shadow for text block */
+    transition: transform 0.3s ease-in-out;
+}
+
+.overview-text:hover {
+    transform: scale(1.05); /* Subtle hover effect to make text pop */
+}
+
+/* Mobile responsive styling */
+@media (max-width: 768px) {
+    .overview-title {
+        font-size: 3rem; /* Decrease title size on mobile */
+    }
+
+    .overview-text {
+        font-size: 1.4rem;
+    }
+}

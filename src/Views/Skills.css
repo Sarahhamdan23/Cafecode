@@ -1,0 +1,55 @@
+.skills-section {
+    padding: 50px 20px;
+    background-color: #0D0D0D;
+    color: #fff;
+    text-align: center;
+}
+
+.skills-title {
+    font-size: 4.7rem; /* Slightly larger font size */
+    font-weight: bold; /* Maintain strong emphasis */
+    color: #E0E0E0; /* Soft white-grey color */
+    margin-bottom: 30px;
+    text-transform: capitalize; /* Use capital letters for each word */
+    letter-spacing: 1px; /* Moderate letter spacing */
+    text-shadow: 1px 1px 3px #0D0D0D; /* Soft shadow for subtle depth */
+    background: none; /* Remove gradient for a cleaner look */
+    color: #E0E0E0; /* Use a golden color for elegance */
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    animation: move-side-to-side 5s infinite alternate ease-in-out;
+}
+
+.skill-item {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+}
+
+@keyframes move-side-to-side {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+    }
+}
