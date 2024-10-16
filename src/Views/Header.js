@@ -3,11 +3,12 @@ import './Header.css';
 import MyPic from '../assets/images/MyPic.png'; // Update the path to your personal photo
 
 const Header = () => {
+  console.log("Header rendered");
   return (
     <>
     <header className="header-container">
       <div className="header-content">
-        <h1 className="greeting-text">Hi, <br/> I'm <span className="name-highlight">Sarah</span> <br/> Full Stack Developer</h1>
+        <h1 className="greeting-text">Hi, <br/> I'm <span className="name-highlight">Sarah,</span> <br/> Full Stack Developer</h1>
 <button className="contact-btn" onClick={() => window.open('mailto:sarahwbas@gmail.com')}>
     Contact
 </button>

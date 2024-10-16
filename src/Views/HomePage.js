@@ -1,34 +1,24 @@
-// src/Views/HomePage.js
-import React, { useState } from 'react';
+import React from 'react';
 import './HomePage.css';
-
-
 import Header from './Header.js';
 import Skills from './Skills.js';
 import Projects from './Projects.js';
-
-
-
-
-
+import ExpEdu from './ExpEdu.js';
+import ContactMe from './ContactMe';
+import NavBar from './NavBar';
 
 const HomePage = () => {
-    const [isBlue, setIsBlue] = useState(false);
-
-    const toggleColor = () => {
-        setIsBlue(!isBlue);
-    };
-
-    return (
-        <div className="cafe-homepage">
-            <Header />
-            <Skills />
-            <Projects />
-
-
-        </div>
-    );
+  return (
+    <div className="cafe-homepage">
+      <NavBar />
+      <Header id="overview" />
+      <Skills id="skills" />
+      <Projects id="projects" />
+      <ExpEdu id="experience" />
+      <ContactMe id="contact" />
+      
+    </div>
+  );
 };
 
 export default HomePage;
-

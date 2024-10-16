@@ -3,3 +3,8 @@
     padding: 50px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
