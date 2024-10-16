@@ -90,7 +90,7 @@ header, .overview-section {
 
 .name-highlight:hover {
     color: #e65212; /* New color when hovering (gold) */
-    font-size: 6.5rem; /* Slight increase in font size */
+    font-size: 5.5rem; /* Slight increase in font size */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds shadow to make it pop */
 }
 
@@ -177,11 +177,12 @@ header, .overview-section {
 
 /* Stylized text for a cooler effect */
 .overview-text {
-    font-size: 1.8rem; /* Slightly increase font size */
+    font-size: 1.9rem; /* Slightly increase font size */
     font-family: 'Georgia', serif; /* Change font to a more elegant style */
-    line-height: 1.8; /* Increase line height for better readability */
+    line-height: 2.8; /* Increase line height for better readability */
     max-width: 900px;
     margin: 0 auto;
+    margin-top: 70px;
     color: #E0E0E0; /* Softer light grey */
     padding: 20px; /* Padding around the text block */
     border-radius: 5px; /* Add rounded corners */

@@ -13,7 +13,7 @@
 
 .navbar-brand h1 {
   color: #ffffff; /* White for the logo */
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin: 0;
 }
 
@@ -34,7 +34,7 @@
  
   ;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .navbar-links a:hover {
@@ -45,7 +45,7 @@
 /* Dropdown styling */
 .nav-dropdown .dropdown-toggle {
   color: #ffffff; /* Same text color */
-  font-size: 1.2rem; /* Same font size */
+  font-size: 1.5rem; /* Same font size */
   text-decoration: none;
 }
 
