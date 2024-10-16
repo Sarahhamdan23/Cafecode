@@ -1,5 +1,5 @@
 import React from 'react';
-import './HomePage.css';
+//import './HomePage.css';
 import Header from './Header.js';
 import Skills from './Skills.js';
 import Projects from './Projects.js';
@@ -10,8 +10,8 @@ import NavBar from './NavBar';
 const HomePage = () => {
   return (
     <div className="cafe-homepage">
-      <NavBar />
-      <Header id="overview" />
+      <NavBar/>
+      <Header id="header" />
       <Skills id="skills" />
       <Projects id="projects" />
       <ExpEdu id="experience" />

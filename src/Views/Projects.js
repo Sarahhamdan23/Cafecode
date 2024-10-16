@@ -8,7 +8,7 @@ import MITCertif from '../assets/images/MITCertif.png'; // Adjust the path if ne
 
 const Projects = () => {
   return (
-    <section className="projects-section">
+    <section className="projects-section" id="projects">
       <h2 className="projects-title">My Projects & Certificates</h2>
       <div className="projects-container">
         
@@ -17,7 +17,7 @@ const Projects = () => {
           <div className="project-image-container">
             <img src={MyProject} alt="Project 1" className="project-image" />
           </div>
-          <h3 className="project-title">Finanical Dashboard Application</h3>
+          <h3 className="project-title">Finanical Dashboard </h3>
           <p className="project-description">
             I completed a 32-week MIT Full Stack Web Development Bootcamp with a score of 98 out of 100.
             I developed a full-stack finance dashboard using Next.js. Users can log in, log out, and perform CRUD operations.

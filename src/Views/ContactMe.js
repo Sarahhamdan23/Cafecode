@@ -7,7 +7,7 @@ import GitHubIcon from '../assets/images/GitHubIcon.png'; // GitHub icon
 
 const ContactMe = () => {
     return (
-        <section className="contact-section">
+        <section className="contact-section" id="contact">  {/* Add the id here */}
             <div className="contact-left">
                 <h2 className="contact-title">Work with me</h2>
                 <div className="contact-icons">

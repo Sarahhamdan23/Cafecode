@@ -105,3 +105,19 @@ font-size: 2.5rem;
     margin-top: 90px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
+
+.contact-btn {
+    background-color: pale pink;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .contact-btn:hover {
+    background-color:brown
+  }
+  

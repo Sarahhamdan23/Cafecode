@@ -1,60 +1,89 @@
 /* Navbar Styling */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0D0D0D; /* Dark background */
-    padding: 10px 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .navbar-brand h1 {
-    color: #ffffff; /* Gold color for the logo */
-    font-size: 1.5rem;
-    margin: 0;
-  }
-  
-  .navbar-links {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-  }
-  
-  .navbar-links li {
-    margin-right: 20px;
-  }
-  
-  .navbar-links a {
-    color: #ffffff; /* Light text */
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-  
-  .navbar-links a:hover {
-    color: #FFD700; /* Gold hover effect */
-    
-  }
-  
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-    }
-  
-    .navbar-links {
-      flex-direction: column;
-      margin-top: 10px;
-    }
-  
-    .navbar-links li {
-      margin-bottom: 10px;
-      margin-right: 0;
-    }
-  }
-  section {
-    min-height: 100vh; /* Full viewport height */
-    padding: 20px;  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0D0D0D; /* Dark background */
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
 
-  
+.navbar-brand h1 {
+  color: #ffffff; /* White for the logo */
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+}
+
+.navbar-links li {
+  margin-right: 20px;
+}
+
+.navbar-links a {
+  padding-top: 10px;
+  color: #ffffff; /* Light text */
+  background-color: #0D0D0D
+ 
+  ;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar-links a:hover {
+  color: red; /* Gold hover effect */
+  cursor: pointer;
+}
+
+/* Dropdown styling */
+.nav-dropdown .dropdown-toggle {
+  color: #ffffff; /* Same text color */
+  font-size: 1.2rem; /* Same font size */
+  text-decoration: none;
+}
+
+.nav-dropdown .dropdown-toggle:hover {
+  color: #FFD700; /* Gold hover effect, same as other links */
+}
+
+.nav-dropdown .dropdown-menu {
+  background-color: #0D0D0D; /* Same background color as navbar */
+  border: none;
+}
+
+.nav-dropdown .dropdown-item {
+  color: #ffffff; /* Light text for dropdown items */
+}
+
+.nav-dropdown .dropdown-item:hover {
+  color: #FFD700; /* Gold hover effect for dropdown items */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .navbar-links li {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
+
+section {
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px;
+}

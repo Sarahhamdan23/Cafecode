@@ -4,10 +4,13 @@
     padding: 40px;
     background-color: #0d0d0d;
     color: #FFFF;
+    padding: 40px;
   }
   
   .experience, .education {
     width: 45%;
+    margin-bottom: 20px;
+
   }
   
   h2 {
