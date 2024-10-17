@@ -1,10 +1,38 @@
 /* src/Views/HomePage.css */
-.cafe-homepage {
-    padding: 50px;
-}
 
-html {
-    scroll-behavior: smooth;
-}
-
-
+/* Global styles for the header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures space between text and image */
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .header-content {
+    max-width: 60%; /* Ensures the text takes up a reasonable portion */
+  }
+  
+  .header-image img {
+    max-width: 150px; /* Adjust the image size */
+    border-radius: 50%; /* Optional: for a circular profile image */
+    height: auto;
+  }
+  
+  /* Media query to adjust for smaller screens (mobile) */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column; /* Stack the text and image vertically */
+      text-align: center;
+    }
+  
+    .header-content {
+      max-width: 100%; /* Full width on mobile */
+      margin-bottom: 20px; /* Space between text and image */
+    }
+  
+    .header-image img {
+      max-width: 100px; /* Reduce image size for smaller screens */
+    }
+  }
+  

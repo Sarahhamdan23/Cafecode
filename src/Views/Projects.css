@@ -121,3 +121,28 @@
   background-color: #B71C1C; /* Darker red for hover effect */
 }
 
+/* Add this to Projects.css */
+
+@media (max-width: 1024px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+}

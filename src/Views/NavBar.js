@@ -1,27 +1,40 @@
-import React from 'react';
-import { Link } from 'react-scroll'; // Import Link from react-scroll
-import { NavDropdown } from 'react-bootstrap'; // Import NavDropdown from react-bootstrap
+import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-scroll';
 import './NavBar.css'; // Add styles for the navbar
 
 const NavBar = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
-  // Function to scroll to the top of the page
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth' // Smooth scrolling
-    });
+  // Toggle dropdown visibility
+  const handleDropdownToggle = () => {
+    setDropdownOpen(!dropdownOpen);
   };
+
+  // Close dropdown when clicking outside
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setDropdownOpen(false);
+    }
+  };
+
+  // Add event listener to detect clicks outside the dropdown
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        {/* Scroll to the top of the page on click */}
-        <h1 onClick={scrollToTop} style={{ cursor: 'pointer' }}>Sarah Hamdan | Portfolio</h1>
+        <h1 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ cursor: 'pointer' }}>
+          Sarah Hamdan | Portfolio
+        </h1>
       </div>
       <ul className="navbar-links">
         <li>
-          {/* Adjust the offset for each section */}
           <Link to="overview" smooth={true} duration={500} offset={-100}>
             Overview
           </Link>
@@ -46,23 +59,33 @@ const NavBar = () => {
             Contact Me
           </Link>
         </li>
-        {/* Add dropdown for external links */}
-        <li>
-          <NavDropdown title="More">
-            <NavDropdown.Item href="https://github.com/Sarahhamdan23" target="_blank">
-              GitHub
-            </NavDropdown.Item>
-            <NavDropdown.Item href="https://www.linkedin.com/in/sarah-hamdan-86651417b/" target="_blank">
-              LinkedIn
-            </NavDropdown.Item>
-            <NavDropdown.Item href="https://www.youtube.com/@soothingmeditation1223" target="_blank">
-              My YouTube Page
-            </NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="mailto:sarahwbas@gmail.com">
-              Email Me
-            </NavDropdown.Item>
-          </NavDropdown>
+        {/* Manual dropdown for external links */}
+        <li ref={dropdownRef} className="nav-dropdown">
+          <span className="dropdown-toggle" onClick={handleDropdownToggle}>
+            More
+          </span>
+          {dropdownOpen && (
+            <ul className="dropdown-menu">
+              <li>
+                <a href="https://github.com/Sarahhamdan23" target="_blank" rel="noopener noreferrer">
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/sarah-hamdan-86651417b/" target="_blank" rel="noopener noreferrer">
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@soothingmeditation1223" target="_blank" rel="noopener noreferrer">
+                  My YouTube Page
+                </a>
+              </li>
+              <li>
+                <a href="mailto:sarahwbas@gmail.com">Email Me</a>
+              </li>
+            </ul>
+          )}
         </li>
       </ul>
     </nav>

@@ -99,7 +99,7 @@ font-size: 2.5rem;
 }
 
 .profile-pic {
-    width: 500px;
+    width: 450px;
     height: auto;
     border-radius: 50%;
     margin-top: 90px;
@@ -119,5 +119,41 @@ font-size: 2.5rem;
   
   .contact-btn:hover {
     background-color:brown
+  }
+  
+  /* Add this to ContactMe.css */
+
+@media (max-width: 1024px) {
+    .contact-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-left {
+      margin-bottom: 20px;
+    }
+  
+    .profile-pic {
+      max-width: 300px;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-section {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .contact-left {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  
+    .profile-pic {
+      max-width: 200px;
+      margin-top: 20px;
+    }
   }
   

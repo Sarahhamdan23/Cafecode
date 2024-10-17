@@ -1,13 +1,81 @@
+/* Global Styles */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-size: 1rem; /* Base font size is 16px */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Font Styles for Headings */
+h1 {
+  font-size: 2rem; /* Adjust as needed */
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* --- Responsive Styling for Tablets (max-width: 1024px) --- */
+@media (max-width: 1024px) {
+  body {
+    font-size: 15px; /* Slightly smaller font size on tablets */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Slightly reduce heading size */
+  }
+
+  h2 {
+    font-size: 1.4rem; /* Adjust h2 for tablets */
+  }
+
+  p {
+    font-size: 0.95rem; /* Adjust paragraph size for tablets */
+  }
+
+  .container {
+    padding: 15px;
+    width: 90vw; /* Slightly less width for tablets */
+  }
+
+  .item {
+    margin-bottom: 20px;
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* --- Mobile Styles: For screens smaller than 768px --- */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Reduce size of h1 for mobile */
+  }
+
+  h2 {
+    font-size: 1.2rem; /* Reduce size of h2 for mobile */
+  }
+
+  p {
+    font-size: 0.9rem; /* Slightly smaller paragraph text for mobile */
+  }
+
+  .container {
+    padding: 10px;
+    width: 100vw; /* Full width for mobile */
+  }
+
+  .item {
+    margin-bottom: 15px;
+    width: 100%; /* Ensure full width on mobile screens */
+    height: auto; /* Maintain aspect ratio for images/videos */
+  }
 }
