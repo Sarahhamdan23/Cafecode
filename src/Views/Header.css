@@ -36,7 +36,7 @@ header, .overview-section {
 .overview-title {
     font-size: 3rem;
     font-weight: bold;
-    color: #FFD700; /* Golden color */
+    color: #fff; /* Golden color */
     margin-bottom: 20px;
 }
 
