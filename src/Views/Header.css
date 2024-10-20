@@ -59,12 +59,14 @@ header, .overview-section {
 }
 
 .greeting-text {
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: bold;
     color: #fff;
     margin-left: 0; /* Remove the large margin-left */
     margin-bottom: 20px;
-    margin-top: 50px; /* Ensure greeting text has space from the top */
+    margin-top: 200px; /* Ensure greeting text has space from the top */
+
+    
 }
 
 .name-highlight {
@@ -122,17 +124,29 @@ header, .overview-section {
     }
 
     .greeting-text {
-        font-size: 3.5rem; /* Adjust font size for tablets */
+        font-size: 2.5rem; /* Adjust font size for tablets */
         margin-top: 50px; /* Extra margin for space from the top */
     }
 
+
+
+    /* Media query for screens smaller than 768px (commonly mobile) */
+@media (max-width: 768px) {
+    .greeting {
+      margin-top: 100px; /* Increase the top margin to lower the text */
+      font-size: 20px; /* Optional: Adjust font size if necessary */
+    }
+  }
+
+
+  
     .profile-photo {
-        max-width: 400px; /* Reduce image size for tablets */
+        max-width: 200px; /* Reduce image size for tablets */
         margin-top: 30px;
     }
 
     .contact-btn {
-        font-size: 1.3rem;
+        font-size: 1.0rem;
         padding: 12px 25px;
     }
 }
@@ -144,12 +158,12 @@ header, .overview-section {
         align-items: center;
         text-align: center;
         padding: 10px;
-        padding-top: 180px; /* Add more padding on mobile to avoid overlap */
+        padding-top: 180px; /* Keep this value for spacing */
     }
 
     .greeting-text {
-        font-size: 2.5rem; /* Further reduce font size for mobile */
-        margin-top: 60px; /* Ensure extra margin from the top on mobile */
+        font-size: 2.5rem; /* Keep this value for font size */
+        margin-top: 200px; /* Increase this to push the greeting down further */
     }
 
     .profile-photo {
@@ -162,3 +176,4 @@ header, .overview-section {
         padding: 10px 20px;
     }
 }
+

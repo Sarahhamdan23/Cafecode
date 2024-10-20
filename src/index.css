@@ -79,3 +79,48 @@ p {
     height: auto; /* Maintain aspect ratio for images/videos */
   }
 }
+
+
+/* Navbar container */
+ nav{
+  display: flex;
+  justify-content: space-between; /* Ensure items are spread out */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Make sure the navbar takes up the full width */
+  padding: 10px 20px; /* Adjust padding */
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+/* Navbar list items (horizontal layout) */
+nav ul {
+  display: flex;
+  justify-content: space-around; /* Space out items evenly */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 15px; /* Adjust space between items */
+}
+
+/* Links in the navbar */
+nav ul li a {
+  text-decoration: none;
+  font-size: 16px; /* Adjust font size if needed */
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 480px) {
+  nav ul li {
+      margin-right: 10px; /* Reduce space between items on small screens */
+  }
+
+  nav ul li a {
+      font-size: 10px; /* Reduce font size on mobile */
+  }
+
+  nav {
+      padding: 5px 10px; /* Reduce padding on mobile */
+  }
+}
