@@ -12,7 +12,15 @@ const skills = [
   "Software Testing & Debugging",
   "Cryptocurrency Investments",
   "Project Management Tools",
-  "Microsoft & Google Platforms"
+  "Microsoft & Google Platforms",
+  "Generative AI  MidJourney, DALL·E, Stable Diffusion, Runway ML",
+  "AI Image & Video AI-generated art, motion graphics, video synthesis",
+  "AI Audio & Voice Speech synthesis, AI-generated music",
+  "Prompt Engineering Optimizing AI inputs for better results",  
+  "AI Tools & Frameworks",
+  "ChatGPT, Claude, Gemini, Perplexity, Notion AI, Google AI",
+  "Creative Automation AI-driven content creation & workflow optimization",
+  "AI Content Strategy Branding, marketing, and ethical AI use"
 ];
 
 const Skills = () => {

@@ -1,93 +1,36 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-scroll';
-import './NavBar.css'; // Add styles for the navbar
+import React, { useState } from 'react';
+import './NavBar.css';
 
 const NavBar = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const dropdownRef = useRef(null);
+  const [isOpen, setIsOpen] = useState(false);
 
-  // Toggle dropdown visibility
-  const handleDropdownToggle = () => {
-    setDropdownOpen(!dropdownOpen);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
-  // Close dropdown when clicking outside
-  const handleClickOutside = (event) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-      setDropdownOpen(false);
-    }
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+    setIsOpen(false);
   };
-
-  // Add event listener to detect clicks outside the dropdown
-  useEffect(() => {
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
 
   return (
     <nav className="navbar">
-      <div className="navbar-brand">
-        <h1 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ cursor: 'pointer' }}>
-          Sarah Hamdan | Portfolio
-        </h1>
+      <div className="nav-menu-container">
+        <div className="logo">Sarah's Portfolio</div>
+        <div className={`nav-menu ${isOpen ? 'active' : ''}`}>
+          <a href="#" className="nav-item" onClick={scrollToTop}>Home</a>
+          <a href="#skills" className="nav-item" onClick={() => setIsOpen(false)}>Skills</a>
+          <a href="#projects" className="nav-item" onClick={() => setIsOpen(false)}>Projects</a>
+          <a href="#experience" className="nav-item" onClick={() => setIsOpen(false)}>Experience</a>
+          <a href="#contact" className="nav-item" onClick={() => setIsOpen(false)}>Contact</a>
+        </div>
+        <button className="hamburger" onClick={toggleMenu}>
+          {isOpen ? '✕' : '☰'}
+        </button>
       </div>
-      <ul className="navbar-links">
-        <li>
-          <Link to="overview" smooth={true} duration={500} offset={-100}>
-            Overview
-          </Link>
-        </li>
-        <li>
-          <Link to="skills" smooth={true} duration={500} offset={-100}>
-            Skills
-          </Link>
-        </li>
-        <li>
-          <Link to="projects" smooth={true} duration={500} offset={-100}>
-            Projects & Certificates
-          </Link>
-        </li>
-        <li>
-          <Link to="experience" smooth={true} duration={500} offset={-100}>
-            Experience & Education
-          </Link>
-        </li>
-        <li>
-          <Link to="contact" smooth={true} duration={500} offset={-100}>
-            Contact Me
-          </Link>
-        </li>
-        {/* Manual dropdown for external links */}
-        <li ref={dropdownRef} className="nav-dropdown">
-          <span className="dropdown-toggle" onClick={handleDropdownToggle}>
-            More
-          </span>
-          {dropdownOpen && (
-            <ul className="dropdown-menu">
-              <li>
-                <a href="https://github.com/Sarahhamdan23" target="_blank" rel="noopener noreferrer">
-                  GitHub
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/sarah-hamdan-86651417b/" target="_blank" rel="noopener noreferrer">
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/@soothingmeditation1223" target="_blank" rel="noopener noreferrer">
-                  My YouTube Page
-                </a>
-              </li>
-              <li>
-                <a href="mailto:sarahwbas@gmail.com">Email Me</a>
-              </li>
-            </ul>
-          )}
-        </li>
-      </ul>
     </nav>
   );
 };

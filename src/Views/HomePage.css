@@ -36,3 +36,22 @@
     }
   }
   
+.cafe-homepage {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .cafe-homepage {
+    padding: 0;
+  }
+
+  /* Ensure sections stack properly */
+  .cafe-homepage > * {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+}
+  
