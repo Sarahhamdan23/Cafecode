@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cafecode/static/css/main.5b9666ca.chunk.css",
-    "main.js": "/cafecode/static/js/main.0cdd137b.chunk.js",
-    "main.js.map": "/cafecode/static/js/main.0cdd137b.chunk.js.map",
+    "main.js": "/cafecode/static/js/main.479b8c6f.chunk.js",
+    "main.js.map": "/cafecode/static/js/main.479b8c6f.chunk.js.map",
     "runtime~main.js": "/cafecode/static/js/runtime~main.6ec20091.js",
     "runtime~main.js.map": "/cafecode/static/js/runtime~main.6ec20091.js.map",
     "static/js/2.5b5cb4f4.chunk.js": "/cafecode/static/js/2.5b5cb4f4.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.1af95c37.chunk.js": "/cafecode/static/js/3.1af95c37.chunk.js",
     "static/js/3.1af95c37.chunk.js.map": "/cafecode/static/js/3.1af95c37.chunk.js.map",
     "index.html": "/cafecode/index.html",
-    "precache-manifest.3368e8902217a265ffbf64d2576ba7a9.js": "/cafecode/precache-manifest.3368e8902217a265ffbf64d2576ba7a9.js",
+    "precache-manifest.75e4f7e8dacad1a34681192fb87dc614.js": "/cafecode/precache-manifest.75e4f7e8dacad1a34681192fb87dc614.js",
     "service-worker.js": "/cafecode/service-worker.js",
     "static/css/main.5b9666ca.chunk.css.map": "/cafecode/static/css/main.5b9666ca.chunk.css.map",
     "static/media/CybersecurityCertif.png": "/cafecode/static/media/CybersecurityCertif.a9b737bf.png",
