@@ -4,6 +4,7 @@ import LinkedInIcon from '../assets/images/LinkedinIcon.png'; // LinkedIn icon
 import Emailme from '../assets/images/Emailme.png'; // Email icon
 import MyProfilePic2 from '../assets/images/MyProfilePic2.png'; // Profile image
 import GitHubIcon from '../assets/images/GitHubIcon.png'; // GitHub icon
+// import Instagram from '../assets/images/Instagram.png';  // Comment this out for now
 
 const ContactMe = () => {
     return (
@@ -20,6 +21,19 @@ const ContactMe = () => {
                     <a href="https://github.com/Sarahhamdan23" target="_blank" rel="noopener noreferrer">
                         <img src={GitHubIcon} alt="GitHub" className="contact-icon" />
                     </a>
+                    {/* Comment out Instagram section until you have the image
+                    <a 
+                        href="https://www.instagram.com/tabonbakery/?igsh=aHA0eGZ2d3FsaXMx&utm_source=qr#" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        <img 
+                            src={Instagram} 
+                            alt="Instagram" 
+                            className="contact-icon"
+                        />
+                    </a>
+                    */}
                 </div>
                 <div className="contact-info">
                     <p className="label">Email:</p>

@@ -1,6 +1,8 @@
 /* Base App styles */
 .App {
   text-align: center;
+  min-height: 100vh;
+  background-color: #ffffff; /* or any color you prefer */
 }
 
 /* Header and content adjustments for tablets and mobile */
@@ -45,6 +47,9 @@
 /* Global font size */
 body {
   font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* or any color you prefer */
 }
 
 /* --- Media Queries for Responsiveness --- */
