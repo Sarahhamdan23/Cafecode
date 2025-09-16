@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c19e59cfa229041e4d42a4c9840b2af4",
+    "revision": "33ac02eeeea6689a59875a30a5a43a6a",
     "url": "/cafecode/index.html"
   },
   {
-    "revision": "530fdd13c988e9201437",
+    "revision": "6275090afa2e61126d96",
     "url": "/cafecode/static/css/main.954383ee.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cafecode/static/js/3.1af95c37.chunk.js"
   },
   {
-    "revision": "530fdd13c988e9201437",
-    "url": "/cafecode/static/js/main.fc7cd288.chunk.js"
+    "revision": "6275090afa2e61126d96",
+    "url": "/cafecode/static/js/main.53f54c20.chunk.js"
   },
   {
     "revision": "fe8ba6d2c559b98979d4",
@@ -44,15 +44,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cafecode/static/media/MITCertif.1a5ea312.png"
   },
   {
-    "revision": "02d995fbc99a470a23212089aa32f5bb",
-    "url": "/cafecode/static/media/MyPic.02d995fb.png"
-  },
-  {
     "revision": "bbee9601eca294de6c05c37dda4dd92e",
     "url": "/cafecode/static/media/MyProfilePic2.bbee9601.png"
   },
   {
     "revision": "5f405cb4af5b4d30180ffa6cbff69dba",
     "url": "/cafecode/static/media/MyProject.5f405cb4.png"
+  },
+  {
+    "revision": "8314214b5bc2f6d71d84bf70faf82f98",
+    "url": "/cafecode/static/media/sarahPic.8314214b.png"
   }
 ]);

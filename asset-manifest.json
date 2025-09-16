@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cafecode/static/css/main.954383ee.chunk.css",
-    "main.js": "/cafecode/static/js/main.fc7cd288.chunk.js",
-    "main.js.map": "/cafecode/static/js/main.fc7cd288.chunk.js.map",
+    "main.js": "/cafecode/static/js/main.53f54c20.chunk.js",
+    "main.js.map": "/cafecode/static/js/main.53f54c20.chunk.js.map",
     "runtime~main.js": "/cafecode/static/js/runtime~main.6ec20091.js",
     "runtime~main.js.map": "/cafecode/static/js/runtime~main.6ec20091.js.map",
     "static/js/2.5b5cb4f4.chunk.js": "/cafecode/static/js/2.5b5cb4f4.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.1af95c37.chunk.js": "/cafecode/static/js/3.1af95c37.chunk.js",
     "static/js/3.1af95c37.chunk.js.map": "/cafecode/static/js/3.1af95c37.chunk.js.map",
     "index.html": "/cafecode/index.html",
-    "precache-manifest.6396c9303bcb5a15f12ea2b93087c5a3.js": "/cafecode/precache-manifest.6396c9303bcb5a15f12ea2b93087c5a3.js",
+    "precache-manifest.65515cc2046d2726126f97c079af84c1.js": "/cafecode/precache-manifest.65515cc2046d2726126f97c079af84c1.js",
     "service-worker.js": "/cafecode/service-worker.js",
     "static/css/main.954383ee.chunk.css.map": "/cafecode/static/css/main.954383ee.chunk.css.map",
     "static/media/CybersecurityCertif.png": "/cafecode/static/media/CybersecurityCertif.a9b737bf.png",
@@ -18,8 +18,8 @@
     "static/media/GitHubIcon.png": "/cafecode/static/media/GitHubIcon.1108618d.png",
     "static/media/LinkedinIcon.png": "/cafecode/static/media/LinkedinIcon.e66a5ec6.png",
     "static/media/MITCertif.png": "/cafecode/static/media/MITCertif.1a5ea312.png",
-    "static/media/MyPic.png": "/cafecode/static/media/MyPic.02d995fb.png",
     "static/media/MyProfilePic2.png": "/cafecode/static/media/MyProfilePic2.bbee9601.png",
-    "static/media/MyProject.png": "/cafecode/static/media/MyProject.5f405cb4.png"
+    "static/media/MyProject.png": "/cafecode/static/media/MyProject.5f405cb4.png",
+    "static/media/sarahPic.png": "/cafecode/static/media/sarahPic.8314214b.png"
   }
 }
