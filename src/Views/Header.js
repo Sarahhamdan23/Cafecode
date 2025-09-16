@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import MyPic from '../assets/images/MyPic.png'; // Update the path to your personal photo
+import MyPic from '../assets/images/sarahPic.png'; // Updated to use sarahPic.png
 
 const Header = () => {
   console.log("Header rendered");
@@ -39,7 +39,7 @@ const Header = () => {
           <br />
           <br />
           Having worked with a range of technologies and tools, I am passionate about creating secure, scalable
-          solutions while constantly learning and improving my skills. If you’re looking for someone who can bridge
+          solutions while constantly learning and improving my skills. If you're looking for someone who can bridge
           the gap between development and cybersecurity, feel free to reach out!
         </p>
       </section>
