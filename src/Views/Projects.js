@@ -4,6 +4,7 @@ import './Projects.css'; // Ensure you style your component
 import MyProject from '../assets/images/MyProject.png';
 import CybersecurityCertif from '../assets/images/CybersecurityCertif.png';
 import MITCertif from '../assets/images/MITCertif.png'; // Adjust the path if necessary
+import TabonBakeryImg from '../assets/images/TabonBakerySite 2.png';
 
 
 const Projects = () => {
@@ -29,6 +30,29 @@ const Projects = () => {
             GitHub
             </button>
 
+        </div>
+
+        {/* Tabon Bakery Website */}
+        <div className="project-card">
+          <div className="project-image-container">
+            <img src={TabonBakeryImg} alt="Tabon Bakery Website" className="project-image" />
+          </div>
+          <h3 className="project-title">Tabon Bakery Website</h3>
+          <p className="project-description">
+            <strong>Tech Stack:</strong> HTML, CSS, React | <strong>Integrations:</strong> Uber Eats, Grubhub
+            <br />
+            Built a food ordering website showcasing Tabon Bakery’s signature manakish.
+            <br />
+            Integrated with Uber Eats and Grubhub for online orders.
+            <br />
+            Designed a mobile-friendly menu UI highlighting the bakery’s dough-making process.
+          </p>
+          <div className="project-tags">
+            <span>#React</span><span>#Responsive</span><span>#UI</span>
+          </div>
+          <button className="github-btn" onClick={() => window.open('https://www.tabonbakery.com', '_blank')}>
+            Visit Site
+          </button>
         </div>
 
         {/* Project Card 2 */}
@@ -140,7 +164,6 @@ const Projects = () => {
     Certificate
   </button>
 </div>
-
 
 
 
