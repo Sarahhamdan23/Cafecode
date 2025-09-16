@@ -1,7 +1,7 @@
 {
   "name": "cafecode",
   "version": "0.1.0",
-  "homepage": "https://sarahhamdan23.github.io/Cafecode",
+  "homepage":"https://www.sarah-hamdan.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
